@@ -1,0 +1,358 @@
+/* ### Headings */
+/* - Weights: 600 */
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* ### Body, Call-to-actions */
+/* - Weights: 400, 700 */
+/* font-family: 'Open Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Pink: hsl(322, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  font-weight: 400;
+  /* background-color: var(--Very-Pale-Cyan);
+  background-image: url('images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain; */
+  /* padding: 5%; */
+}
+
+/* ///// image and typography Common ///// */
+
+h1,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+h3 {
+  font-size: 2rem;
+  color: var(--Very-Dark-Cyan);
+}
+h6 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+img {
+  /* width: 100%; */
+  max-width: 100%;
+  /* object-fit: cover; */
+  display: block;
+}
+
+/* //// button common ///// */
+
+.try-btn {
+  border: none;
+  background-color: #fff;
+  color: var(--Grayish-Blue);
+  padding: 0.8rem 2.7rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: 700;
+}
+.start-btn {
+  border: none;
+  background-color: var(--Pink);
+  padding: 1.3rem 2.7rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #fff;
+  width: 80%;
+}
+
+/* ///// layout common ///// */
+main {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ///// details ///// */
+
+/*  header */
+header {
+  background-color: var(--Very-Pale-Cyan);
+  background-image: url('images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contents {
+  padding: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+.contents p {
+  margin: 2.5rem 0;
+  color: var(--Grayish-Blue);
+}
+.logo {
+  max-width: 10rem;
+}
+.img-mockup {
+  margin-top: 3rem;
+}
+
+/* ///// section ///// */
+
+.card {
+  border-radius: 1.5rem;
+  padding: 4rem;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.user-card {
+  margin-bottom: 0;
+}
+.card-contents {
+  margin-top: 5rem;
+  text-align: center;
+}
+.card-contents p {
+  color: var(--Grayish-Blue);
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* ///// overlay-card///// */
+.overlay-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transform: translateY(13rem);
+  background-color: #fff;
+}
+.overlay-card h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+.overlay-card .btn {
+  max-width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ///// footer ///// */
+footer {
+  color: #fff;
+  background-color: var(--Very-Dark-Cyan);
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+}
+footer .split{
+padding-top: 10rem;
+}
+footer .info-logo {
+  width: 38%;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.info .location-logo {
+  margin-top: 0.7rem;
+  align-self: start;
+}
+.links-container {
+  margin: 4rem 0;
+}
+
+.links ul {
+  list-style-type: none;
+}
+.links ul li {
+  line-height: 2.6;
+}
+.links ul li button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+}
+.ion-icon {
+  color: white;
+  background-color: transparent;
+  font-size: 2rem;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.social-link {
+  font-size: 3rem;
+}
+
+/* ///// media query ///// */
+
+@media (min-width: 678px) {
+  body {
+    background-image: url('images/bg-hero-desktop.svg');
+  }
+
+  /* /// header /// */
+  header {
+    padding-top: 4rem;
+   
+  }
+  header  nav .logo {
+    max-width: 12.4rem;
+  }
+  header .showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .showcase img {
+    max-width: 40rem;
+  }
+  .showcase .contents {
+    text-align: left;
+    max-width: 35rem;
+  }
+  .contents h1 {
+    text-align: left;
+  }
+  .contents p {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  /* ///// section ///// */
+
+  section {
+    width: min(70.5rem,85%);
+    /* width: 85%; */
+  }
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    padding:3rem;
+  }
+  .card.flowing-card {
+    flex-direction: row;
+  }
+  .card img {
+    max-width: 20rem;
+  }
+  .card-contents {
+    padding-bottom: 3rem;
+    text-align: left;
+    max-width: 30rem;
+  }
+  .card-contents h3 {
+    font-size: 1.9rem;
+    text-align: left;
+  }
+  .card-contents p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .overlay-card {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  /* ///// footer ///// */
+ footer{
+   padding-left: 0;
+ }
+footer .split{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+}
+footer .info-logo {
+  /* width: 38%; */
+  max-width: 18rem;
+}
+.infos {
+  max-width: 30rem;
+
+}
+.info p{
+  font-size: 1.3rem;
+}
+.links-container{
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  gap: 9rem;
+}
+.links-container .links ul li button {
+  font-size: 1.4rem;
+  /* font-size: 1.7rem; */
+}
+.copy-right h6{
+  text-align: right;
+  margin-right: 5rem;
+}
+.social-link {
+  font-size: 2.4rem;
+}
+}
+
